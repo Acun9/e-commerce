@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import PageContent from './layout/PageContent';
 import HomePage from './pages/HomePage';
+import ShopPage from './pages/ShopPage';
 
 function App() {
   return (
@@ -8,11 +9,7 @@ function App() {
       <PageContent>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/shop">
-            <div className="container mx-auto px-4 py-12">
-              <h1 className="text-3xl font-bold">Shop Page - Coming Soon</h1>
-            </div>
-          </Route>
+          <Route path="/shop" component={ShopPage} />
           <Route path="/about">
             <div className="container mx-auto px-4 py-12">
               <h1 className="text-3xl font-bold">About Page - Coming Soon</h1>
